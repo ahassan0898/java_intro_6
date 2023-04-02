@@ -2,6 +2,7 @@ package homeworks;
 
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class Homework07 {
@@ -61,36 +62,19 @@ public class Homework07 {
 
         System.out.println("\n--------------TASK-5----------\n");
 
-        ArrayList<String> characters = new ArrayList<>();
-        characters.add("Spider Man");
-        characters.add("Iron Man");
-        characters.add("Black Panther");
-        characters.add("DeadPool");
-        characters.add("Captain America");
+        ArrayList<String> characters = new ArrayList<>(Arrays.asList("Spider Man", "Iron Man", "Black Panther", "DeadPool", "Captain America"));
         System.out.println(characters);
         System.out.println(characters.contains("Wolverine"));
 
         System.out.println("\n--------------TASK-6----------\n");
 
-        ArrayList<String> avengers = new ArrayList<>();
-        avengers.add("Hulk");
-        avengers.add("Black Widow");
-        avengers.add("Captain America");
-        avengers.add("Iron Man");
+        ArrayList<String> avengers = new ArrayList<>(Arrays.asList("Hulk", "Black Widow", "Captain America", "Iron Man"));
         Collections.sort(avengers);
         System.out.println(avengers);
         System.out.println(avengers.contains("Hulk") && avengers.contains("Iron Man"));
 
         System.out.println("\n--------------TASK-7----------\n");
-        ArrayList<Character> char1 = new ArrayList<>();
-        char1.add('A');
-        char1.add('x');
-        char1.add('$');
-        char1.add('9');
-        char1.add('*');
-        char1.add('+');
-        char1.add('F');
-        char1.add('G');
+        ArrayList<Character> char1 = new ArrayList<>(Arrays.asList('A', 'x', '$', '9', '*', '+', 'F', 'G'));
 
         System.out.println(char1);
 
@@ -100,14 +84,9 @@ public class Homework07 {
 
         System.out.println("\n--------------TASK-8----------\n");
 
-        ArrayList<String> objects = new ArrayList<>();
-        objects.add("Desk");
-        objects.add("Laptop");
-        objects.add("Mouse");
-        objects.add("Monitor");
-        objects.add("Mouse-Pad");
-        objects.add("Adapter");
+        ArrayList<String> objects = new ArrayList<>(Arrays.asList("Desk", "Laptop", "Mouse", "Monitor", "Mouse-Pad", "Adapter"));
 
+        //use Arrays.asList to add inside the parenthesis
         System.out.println(objects);
         Collections.sort(objects);
         System.out.println(objects);
@@ -124,14 +103,9 @@ public class Homework07 {
 
         System.out.println("\n--------------TASK-9----------\n");
 
-        ArrayList<String> kitchen = new ArrayList<>();
+        ArrayList<String> kitchen = new ArrayList<>(Arrays.asList("Plate", "spoon", "fork", "Knife", "cup", "Mixer"));
 
-        kitchen.add("Plate");
-        kitchen.add("spoon");
-        kitchen.add("fork");
-        kitchen.add("Knife");
-        kitchen.add("cup");
-        kitchen.add("Mixer");
+
         System.out.println(kitchen);
 
         int uppercase = 0;
@@ -153,18 +127,7 @@ public class Homework07 {
 
         System.out.println("\n--------------TASK-10----------\n");
 
-        ArrayList<Integer> num2 = new ArrayList<>(); //3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78
-        num2.add(3);
-        num2.add(5);
-        num2.add(7);
-        num2.add(10);
-        num2.add(0);
-        num2.add(20);
-        num2.add(17);
-        num2.add(10);
-        num2.add(23);
-        num2.add(56);
-        num2.add(78);
+        ArrayList<Integer> num2 = new ArrayList<>(Arrays.asList(3,5,7,10,0,20,17,10,23,56,78)); //3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78
 
         System.out.println(num2);
 
