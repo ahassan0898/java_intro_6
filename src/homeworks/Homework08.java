@@ -34,6 +34,7 @@ public class Homework08 {
         String[] strArray = str.split("");
         for (int i = 0; i < 1; i++) {
             System.out.println(Arrays.asList(str));
+
         }
         return strArray;
     }
